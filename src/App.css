@@ -1,38 +1,138 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+* {
+  margin: 0;
+  padding: 0;
+  background-color: black;
   color: white;
+  text-decoration: none;
 }
 
-.App-link {
-  color: #61dafb;
+a {
+  transition: opacity 150ms, transform 150ms;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a:hover {
+  opacity: 0.85;
+}
+
+.view-wrapper {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.company-container h3,
+p,
+h4 {
+  margin-bottom: 0.2rem;
+}
+
+.company-container h4 {
+  margin-top: 1rem;
+}
+
+.company-container img {
+  margin-top: 1rem;
+  width: 35rem;
+  margin-bottom: 2rem;
+}
+
+.summary-text {
+  width: 30rem;
+  margin: 0 auto;
+}
+
+.company-container a {
+  display: block;
+}
+
+.launchlistitem-container {
+  margin-bottom: 2rem;
+}
+
+.launchlistitem-container img {
+  margin-top: 0.5rem;
+}
+
+.launchpage-container img {
+  margin-top: 1rem;
+}
+
+.launchpage-container a {
+  display: block;
+}
+
+.launchpage-container button,
+.rocketpage-container button,
+.shipspage-container button {
+  margin-top: 1rem;
+  border: none;
+  padding: 0.8rem;
+  background-color: rgb(27, 27, 27);
+  border-radius: 10px;
+}
+
+.launchpage-container button:hover,
+.rocketpage-container button:hover,
+.shipspage-container button:hover {
+  cursor: pointer;
+  background-color: rgb(46, 46, 46);
+}
+
+.rocketslistitem-container {
+  margin-bottom: 2rem;
+}
+
+.rocketslistitem-container .description {
+  width: 31rem;
+  margin: 0 auto;
+}
+
+.rocketslistitem-container img {
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+  width: 25rem;
+}
+
+.rocketslistitem-container img:hover {
+  transition: all 0.2s linear;
+  transform: scale(1.02);
+}
+
+.rocketpage-container img {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  width: 25rem;
+}
+
+.rocketpage-container .description {
+  width: 35rem;
+  margin: 0 auto;
+}
+
+.rocketpage-container a {
+  display: block;
+}
+
+.shipslistitem-container {
+  margin-bottom: 2rem;
+}
+
+.shipslistitem-container img {
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+  width: 25rem;
+}
+
+.shipslistitem-container img:hover {
+  transition: all 0.2s linear;
+  transform: scale(1.02);
+}
+
+.shipspage-container img {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  width: 35rem;
+}
+
+.shipspage-container a {
+  display: block;
 }
